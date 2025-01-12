@@ -46,3 +46,15 @@ time_per_ant = input("how long does it take to train one of these ants? (in seco
 total_time_seconds = int(time_per_ant) * amount_of_ants
 total_time_hours = total_time_seconds / 3600
 print("you need ", total_time_hours, "hours of speeds ups")
+
+print("okay, now we need to figure out how much rss you need")
+food_per_ant = input("how much food does one ant take? ")
+leaf_per_ant = input("how much leaf does one ant take? ")
+water_per_ant = input("how much water does one ant take? ")
+fungi_per_ant = input("how much fungi does one ant take? ")
+total_food = int(food_per_ant) * amount_of_ants
+total_leaf = int(leaf_per_ant) * amount_of_ants
+total_water = int(water_per_ant) * amount_of_ants
+total_fungi = int(fungi_per_ant) * amount_of_ants
+
+print("you need", total_food, 'food', total_leaf, 'leaf', total_water, 'water', total_fungi, 'fungi')
